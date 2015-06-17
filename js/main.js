@@ -184,7 +184,7 @@ $("#frameMask").mousemove(function( event ) {
   var deltaX = event.offsetX - oldX;
   
   //console.log(deltaX, deltaY);
-  wordBubble.rotateBubbles(deltaX * options.angularSpeed, deltaY * options.angularSpeed);
+  wordBubble.rotateBubbles(-1 * deltaX * options.angularSpeed, deltaY * options.angularSpeed);
 
   oldX = event.offsetX;
   oldY = event.offsetY;
